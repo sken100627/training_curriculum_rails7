@@ -38,12 +38,7 @@ class CalendarsController < ApplicationController
 
       wday_num = (@todays_date + x).wday# wdayメソッドを用いて取得した数値
 
-<<<<<<< Updated upstream
-      days = { :month => (@todays_date + x).month, :date => (@todays_date + x).day, :plans => today_plans, :wday => wdays[wday_num]}
-
-=======
       days = {month: (@todays_date + x).month, date: (@todays_date + x).day, plans: today_plans, wday: wdays[wday_num]}
->>>>>>> Stashed changes
       @week_days.push(days)
     end
 
